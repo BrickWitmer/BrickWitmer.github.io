@@ -1,3 +1,6 @@
 body{
-    color: #404040
+    background-image: url(https://www.rose-hulman.edu/class/csse/csse290-WebProgramming/images/silverware.jpg);
+}
+h2{
+    color: yel;
 }
