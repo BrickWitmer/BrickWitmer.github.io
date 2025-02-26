@@ -1,0 +1,18 @@
+/*Brick Witmer 2/26 */
+
+body { color: #dda15e;
+	  background-color: #606c38;
+	  font-family: Calibri, Arial, sans-serif;
+    }
+
+	
+h1 { color: #bc6c25;}
+
+#main {
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+li{
+    line-height: 150%;
+}
