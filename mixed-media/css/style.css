@@ -2,8 +2,8 @@
     color: white;
 }
 table, th, td{
-    border: 1px solid black;
-    background: hsl(200, 70%, 30%);
+    border: 2px solid black;
+    background: hsl(271, 70%, 30%);
 }
 body{
     background: linear-gradient(hsl(230,90%,60%),hsl(170,100%,50%));
