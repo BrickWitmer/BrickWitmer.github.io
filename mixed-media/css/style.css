@@ -6,7 +6,7 @@ table, th, td{
     background: hsl(200, 70%, 30%);
 }
 body{
-    background: hsl(200, 70%, 40%);
+    background: linear-gradient(hsl(230,90%,60%),hsl(170,100%,50%));
 }
 th{
     background: linear-gradient(hsl(175, 100%, 30%),hsl(200, 70%, 30%));
