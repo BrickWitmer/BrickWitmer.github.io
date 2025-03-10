@@ -1,5 +1,6 @@
 *{
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 table, th, td{
     border: 2px solid black;
@@ -17,6 +18,7 @@ td{
 img,video,audio{
     border-radius: 5px;
     border: 2px solid hsl(150,100%,75%);
+    box-shadow: 2px 4px rgba(5, 5, 5, 60%);
 }
 audio{
     border-radius: 30px;
