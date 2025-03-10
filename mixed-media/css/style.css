@@ -22,10 +22,16 @@ img,video{
     border: 2px solid hsl(150,100%,75%);
     box-shadow: 2px 4px rgba(5, 5, 5, 60%);
     width: 200px;
-    height: auto;
+    height: 150px;
 }
 audio{
     border-radius: 30px;
     border: 2px solid hsl(150,100%,75%);
     box-shadow: 2px 4px rgba(5, 5, 5, 60%);
+}
+ul,ol,li{
+    display: block;
+}
+ul,ol,li,p,a,caption{
+    background: hsla(0, 0%, 20%, 0.103);
 }
