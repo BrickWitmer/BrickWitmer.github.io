@@ -1,13 +1,15 @@
 *{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 table, th, td{
     border: 2px solid black;
-    background: hsl(271, 70%, 30%);
+    background-color: hsl(271, 70%, 30%);
 }
 body{
-    background: linear-gradient(hsl(230,90%,60%),hsl(170,100%,50%));
+    background-image: url(https://artlogic-res.cloudinary.com/w_1400,h_1400,c_limit,f_auto,fl_lossy,q_auto:good,a_0/ws-flowers/usr/images/feature_panels/image/10/flowers-cork-street-50-years-2020-14-of-17-.jpg);
+    background-attachment: fixed;
 }
 th{
     background: linear-gradient(hsl(175, 100%, 30%),hsl(200, 70%, 30%));
@@ -15,11 +17,15 @@ th{
 td{
     background: hsl(210, 85%, 20%);
 }
-img,video,audio{
+img,video{
     border-radius: 5px;
     border: 2px solid hsl(150,100%,75%);
     box-shadow: 2px 4px rgba(5, 5, 5, 60%);
+    width: 200px;
+    height: auto;
 }
 audio{
     border-radius: 30px;
+    border: 2px solid hsl(150,100%,75%);
+    box-shadow: 2px 4px rgba(5, 5, 5, 60%);
 }
