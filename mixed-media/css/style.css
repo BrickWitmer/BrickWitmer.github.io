@@ -32,6 +32,6 @@ audio{
 ul,ol,li{
     display: block;
 }
-ul,ol,li,p,a,caption{
-    background: hsla(0, 0%, 20%, 0.103);
+.sources,.benefits,.top,.tablecaption{
+    background: hsla(0, 0%, 20%, 0.6);
 }
