@@ -7,6 +7,9 @@ table, th, td{
     border: 2px solid black;
     background-color: hsl(271, 70%, 30%);
 }
+table{
+    margin: 0 auto;
+}
 body{
     background-image: url(https://artlogic-res.cloudinary.com/w_1400,h_1400,c_limit,f_auto,fl_lossy,q_auto:good,a_0/ws-flowers/usr/images/feature_panels/image/10/flowers-cork-street-50-years-2020-14-of-17-.jpg);
     background-attachment: fixed;
