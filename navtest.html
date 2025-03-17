@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Navigation Bar</title>
+    <style>
+        *{font-family: sans-serif;}
+        nav {
+            background: green;
+            width: 100%;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a{
+            font-weight: bold;
+            color: greenyellow;
+            background: #333;
+            padding: 10px;
+            text-decoration: none;
+            border: 1px solid transparent;
+        }
+
+        nav a:hover { background: #777; }
+        main { padding-top: 3.5rem;}
+        body{ background: lightblue; color: #111;}
+        footer {text-align: center;}
+
+        @media (max-width: 768px) {
+            body {background: darkslategrey; color: white}
+            main {padding-top: 10vh;}
+            nav a{
+                border: 1px solid white;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px){
+            body{background: linear-gradient(90deg, #00008b, #483d8b);}
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#top">Top</a>
+        <a href="#bot">Bottom</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </nav>
+    <main id="top">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum libero ultricies augue pharetra, in interdum nunc ultricies. Curabitur fringilla consequat risus mattis aliquam. In mauris ipsum, sagittis ac aliquam sed, rhoncus sit amet mauris. Vivamus a velit magna. Sed eu pulvinar leo. Praesent posuere tortor felis, quis pretium quam lacinia nec. Aliquam ante lorem, hendrerit et ex nec, molestie malesuada metus. Fusce volutpat quam tellus. Sed ullamcorper velit ut lorem tempus, id sollicitudin augue finibus. Nunc vel finibus turpis, ut porta mi. Donec euismod ornare condimentum. Quisque vitae odio sed enim porta volutpat. Suspendisse ornare ornare erat, eu dictum elit condimentum at. Cras eu libero diam.
+
+Donec venenatis nisi et dolor ullamcorper, ac consequat magna rhoncus. Nullam nibh sapien, mollis sit amet enim nec, efficitur gravida metus. Aliquam erat volutpat. Vivamus euismod tincidunt viverra. Nam dapibus et dolor vitae pulvinar. Fusce posuere semper porttitor. Mauris vestibulum ante eget neque rhoncus volutpat. Duis mollis varius erat at faucibus. Nam nulla odio, blandit et arcu et, tempor pharetra eros. Maecenas vel justo aliquet, iaculis tortor eget, mattis magna. Nunc vel viverra neque. Integer elementum malesuada volutpat.
+
+Pellentesque magna enim, commodo in nisl et, maximus tincidunt felis. Mauris vitae ornare ipsum. Ut auctor, purus sed luctus egestas, augue ex condimentum mauris, eget blandit lectus tortor in eros. Mauris sit amet mauris eget leo ultricies porta ac at dolor. Nam et mi id metus sollicitudin sagittis. Maecenas sapien ante, hendrerit et congue vitae, aliquam elementum nisi. Nam at sapien felis. Curabitur lobortis sit amet sapien a congue. Ut nec venenatis quam. Suspendisse finibus id velit non feugiat.
+
+Quisque auctor justo et porta elementum. Sed porta leo lacinia nibh dictum tincidunt vitae ac massa. Quisque porttitor accumsan ornare. Praesent nec leo bibendum, cursus metus in, blandit diam. Nunc a suscipit risus. Proin molestie eget arcu et efficitur. Nulla augue erat, aliquam dictum massa et, volutpat pellentesque diam. Morbi non finibus dui.
+
+Praesent justo magna, facilisis a vulputate eget, luctus vel ex. Nullam viverra arcu vitae massa condimentum ultrices. Maecenas pulvinar ut odio a egestas. Vestibulum rhoncus consequat nulla nec commodo. Proin ultrices libero tellus, eu rutrum velit dictum vel. Etiam luctus ornare purus, vitae sollicitudin tortor. Etiam ac vestibulum metus, nec commodo nibh.
+        </p>
+    </main>
+    <footer id="bot">
+        <b>This is the bottom of the page!</b>
+    </footer>
+</body>
+</html>
