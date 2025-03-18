@@ -1,0 +1,13 @@
+
+input{
+    padding: 3px;
+    width: 53.5%;
+    margin-left: 5px;
+}
+#first, #last{
+    width: 25%;
+}
+.button{
+    padding: 2px;
+    margin: 0 auto;
+}
