@@ -13,12 +13,15 @@
         <form class="inputs">
             <div class="text">
                 <input placeholder="First Name" name="first_name" required id="first">
-                <input placeholder="Last Name" name="last_name" required id="last">
-                <input placeholder="Your Email" name="email" required maxlength="100">
-                <input placeholder="Re-enter Your Email" name="re-email" required maxlength="100">
-                <input placeholder="New Password" name="pass" required maxlength="100">
+                <input placeholder="Last Name" name="last_name" required id="last"><span class="rqd">*</span>
+                </br>
+                <input placeholder="Your Email" name="email" required maxlength="100"><span class="rqd">*</span>
+                </br>    
+                <input placeholder="Re-enter Your Email" name="re-email" required maxlength="100"><span class="rqd">*</span>
+                </br>    
+                <input placeholder="New Password" name="pass" required maxlength="100"><span class="rqd">*</span>
             </div>
-            <p>Birthday</p>
+            <p>Birthday<span class="rqd">*</span></p>
             <div class="Birthday">
                 <select>
                     <option>01</option>
@@ -183,15 +186,17 @@
                     <option value="1906">1906</option>
                     <option value="1905">1905</option>
                 </select>
+                <a href="#">Why do I need to provide my birthday</a>
             </div>
+        </br>
             <div class="radio">
-                <input type="radio" name="gender" id="fem" value="Female">
+                <input type="radio" name="gender" id="fem" value="Female" required>
                 <label for="female">Female</label>
-                <input type="radio" name="gender" id="mal" value="Male">
+                <input type="radio" name="gender" id="mal" value="Male" required>
                 <label for male>Male</label>
             </div>
             <div class="button">
-                <input type="button" value="Sign Up">
+                <button>Submit</button>
             </div>
         </form>
     </main>

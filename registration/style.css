@@ -1,13 +1,29 @@
 
 input{
-    padding: 3px;
-    width: 53.5%;
-    margin-left: 5px;
+    margin: 0 auto;
+    padding: 4px;
+    width: 216px;
 }
 #first, #last{
-    width: 25%;
+    width: 100px;
 }
-.button{
-    padding: 2px;
-    margin: 0 auto;
+button{
+    margin: auto;
+    padding: 10px;
+    width: 216px;
+    background-color: #659d50;
+}
+.rqd{
+    color: rgb(255, 0, 0);
+}
+.radio{
+    display: flex;
+    width: 30%;
+}
+*{
+    align-items: center;
+    justify-items: center;
+}
+a {
+    font-size: 10px;
 }
