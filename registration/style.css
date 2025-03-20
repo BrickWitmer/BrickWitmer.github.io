@@ -1,6 +1,11 @@
 
+*{
+    align-items: center;
+    justify-items: center;
+    vertical-align: middle;
+}
 input{
-    margin: 0 auto;
+    margin: auto;
     padding: 4px;
     width: 216px;
 }
@@ -12,6 +17,13 @@ button{
     padding: 10px;
     width: 216px;
     background-color: #659d50;
+    border: 1px solid;
+    border-radius: 10px;
+    border-width: 2px;
+}
+button:hover{
+    background-color: white;
+    border-style: dotted;
 }
 .rqd{
     color: rgb(255, 0, 0);
@@ -20,10 +32,9 @@ button{
     display: flex;
     width: 30%;
 }
-*{
-    align-items: center;
-    justify-items: center;
-}
 a {
     font-size: 10px;
+}
+body{
+    background: #edf0f5;
 }
