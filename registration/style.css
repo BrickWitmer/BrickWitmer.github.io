@@ -30,6 +30,7 @@ button:hover{
 }
 select{
     padding: 5px;
+    font-weight: bold;
 }
 .rqd{
     color: rgb(255, 0, 0);
