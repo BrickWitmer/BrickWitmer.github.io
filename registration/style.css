@@ -5,6 +5,7 @@
     font-family: "Freight Sans Bold", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
     text-decoration: none;
     kerning: normal;
+    
 }
 
 input{
@@ -53,7 +54,7 @@ a {
     font-size: 10px;
 }
 body{
-    background: #edf0f5;
+    background: white;
 }
 footer{
     font-size: 11px;
@@ -62,10 +63,17 @@ h1,p,a{
     justify-self: flex-start;
 }
 main {
-    background: white;
-    margin: 10px;
+    display: flex;
+    background: #edf0f5;
+    margin: 0 auto;
     padding: 20px;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 10px 10px;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-left: -23vw;
+    margin-top: -27vh;
 }
