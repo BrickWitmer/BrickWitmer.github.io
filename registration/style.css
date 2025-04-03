@@ -20,7 +20,7 @@ button{
     padding: 10px;
     width: 150px;
     background-color: #659d50;
-    border: 1px solid transparent;
+    border: 1px solid black;
     border-radius: 10px;
     border-width: 2px;
     font-size: large;
@@ -33,7 +33,7 @@ button{
 }
 button:hover{
     background-color: lightgray;
-    border-style: dotted;
+    border-style: dashed;
 }
 
 select{
@@ -60,4 +60,12 @@ footer{
 }
 h1,p,a{
     justify-self: flex-start;
+}
+main {
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 10px;
 }
