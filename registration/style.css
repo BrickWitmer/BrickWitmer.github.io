@@ -63,7 +63,6 @@ h1,p,a{
     justify-self: flex-start;
 }
 main {
-    display: flex;
     background: #edf0f5;
     margin: auto;
     padding: 20px;
