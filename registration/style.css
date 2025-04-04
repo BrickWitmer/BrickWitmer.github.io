@@ -65,14 +65,15 @@ h1,p,a{
 main {
     display: flex;
     background: #edf0f5;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
     border: 2px solid black;
     border-radius: 5px;
+    justify-content: center;
+    align-content: center;
     align-items: center;
     justify-items: center;
     position: absolute;
     top: 50%; left: 50%;
-    margin-left: -23vw;
-    margin-top: -27vh;
+    transform: translate(-50%, -50%);
 }
