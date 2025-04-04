@@ -9,7 +9,7 @@
 }
 
 input{
-    margin: auto;
+    margin: 5px auto;
     padding: 8px;
     width: 92.5%;
 }
@@ -26,7 +26,6 @@ button{
     border-width: 2px;
     font-size: large;
     color: white;
-    
 }
 .button{
     display: flex;
