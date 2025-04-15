@@ -1,0 +1,26 @@
+body {
+    background: rgb(50,50,50);
+}
+main {
+    background: gray;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 30vh;
+    padding: 5px;
+    margin: 40vw;
+}
+label {
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin: 3px 3px 3px 3px;
+    color: white;
+}
+input {
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+p {
+    color: white;
+}

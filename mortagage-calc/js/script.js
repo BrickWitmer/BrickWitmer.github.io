@@ -1,0 +1,18 @@
+function calc() {
+    let prin = Number(document.getElementById("princ").value);
+    let rate = Number(document.getElementById("rate").value);
+    let yea = Number(document.getElementById("years").value);
+    let mon = Number(document.getElementById("month").value);
+    let p = document.getElementById("out");
+    let n = 12
+    let nt = 12 * yea
+    let rn = rate/12
+
+    let rem = prin * (1 + rn)**nt - mon * ((1+rn)**nt - 1) / rn;
+
+    p.innerHTML = "Reamaining loan balance: $" + rem.toFixed(2);
+}
+function reset() {
+    let p = document.getElementById("out");
+    p.innerHTML = ""
+}

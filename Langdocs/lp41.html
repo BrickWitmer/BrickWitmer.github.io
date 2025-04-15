@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prints</title>
+</head>
+<body>
+    <label for="prints">Number of prints: </label>
+    <input type="number" id="prints" name="prints" min="0">
+
+    <button onclick="price()">Show cost</button>
+    <p id="out"></p>
+    <script>
+        
+        function price() {
+            let cop = Number(document.getElementById("prints").value);
+            let out = document.getElementById("out");
+            let price = 0.0;
+            let total = 0.0;
+            
+            if (cop > 0 && cop <= 99) {
+                price = 0.30;
+            } else if (cop > 99 && cop < 500) {
+                price = .28;
+            } else if (cop > 499 && cop < 750) {
+                price = .27;
+            } else if (cop > 749 && cop <= 1000) {
+                price = .26;
+            } else if(cop > 1000) {
+                price = 0.25;
+            } else {
+                out.innerHTML = "Invalid number of copies";
+            }
+
+            if (price > 0) {
+            total = cop * price;
+            out.innerHTML = "Price per copy is $" + price + "<br>";
+            out.innerHTML += "total: $" + total.toFixed(2);
+            }
+        }
+        
+    </script>
+</body>
+</html>
