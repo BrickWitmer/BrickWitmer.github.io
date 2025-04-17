@@ -11,8 +11,10 @@ function calc() {
     let rem = prin * (1 + rn)**nt - mon * ((1+rn)**nt - 1) / rn;
 
     p.innerHTML = "Reamaining loan balance: $" + rem.toFixed(2);
+    document.getElementById('modal').showModal()
 }
 function reset() {
     let p = document.getElementById("out");
     p.innerHTML = ""
+    document.getElementById('modal').close()
 }

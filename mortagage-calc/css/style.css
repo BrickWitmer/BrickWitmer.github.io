@@ -1,13 +1,14 @@
 body {
     background: rgb(50,50,50);
 }
-main {
+#inputs{
     background: gray;
     border: 3px solid black;
     border-radius: 10px;
     margin-top: 30vh;
     padding: 5px;
-    margin: 40vw;
+    margin-left: 20vw; margin-right: 20vw;
+    vertical-align: middle;
 }
 label {
     display: flex;
@@ -18,9 +19,38 @@ label {
 }
 input {
     display: flex;
-    align-self: flex-end;
-    justify-self: flex-end;
+    align-self: right;
+    justify-self: right;
+}
+input:hover{
+    background: darkgray;
 }
 p {
     color: white;
+}
+button{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    width: 10vw;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    justify-content: center;
+}
+button:hover{
+    background: darkgray;
+}
+h1 {
+    color: white;
+    display: flex;
+    align-self: center;
+    justify-self:center;
+}
+dialog{
+    background: gray;
+    color: white;
+    border: 3px solid black;
+    border-radius: 3px;
 }

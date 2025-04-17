@@ -8,20 +8,34 @@
     <script src="./js/script.js" defer></script>
 </head>
 <body>
+    
     <main>
+        
+        <h1>Calculate your Mortgage</h1>
+        
         <div id="inputs">
+            
             <label for="princ">Principal:</label>
-    <input type="number" id="princ" name="princ">
-            <label for="rate">Intrest Rate as % (e.g. 7.9): </label>
+            <input type="number" id="princ" name="princ">
+            
+            <label for="rate">Intrest Rate as % (e.g. 7.9):</label>
             <input type="number" id="rate" name="rate">
-            <label for="years">Number of Years: </label>
+            
+            <label for="years">Number of Years:</label>
             <input type="number" id="years" name="years">
-            <label for="month">Monthly Payment</label>
+            
+            <label for="month">Monthly Payment:</label>
             <input type="number" id="month" name="month">
+        
+            <div id="buttons">
+                <button onclick="calc()">Calculate</button>
+                
+                <dialog id="modal">
+                <p id="out"></p>
+                <button onclick="reset()">Reset</button>
+                </dialog>
+            </div>
         </div>
-        <button onclick="calc()">Calculate</button>
-        <button onclick="reset()">Reset</button>
-        <p id="out"></p>
     </main>
 </body>
 </html>
