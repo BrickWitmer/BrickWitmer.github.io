@@ -21,6 +21,7 @@ input {
     display: flex;
     align-self: right;
     justify-self: right;
+    border: 2px solid black;
 }
 input:hover{
     background: darkgray;
@@ -40,13 +41,15 @@ button{
     justify-content: center;
 }
 button:hover{
-    background: darkgray;
+    background: lightgray;
 }
 h1 {
     color: white;
     display: flex;
     align-self: center;
     justify-self:center;
+    margin-top: 100px;
+    margin-bottom: -100px;
 }
 dialog{
     background: gray;
