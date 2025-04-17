@@ -9,7 +9,7 @@ function calc() {
 
     let rem = prin * (1 + rn)**nt - mon * ((1+rn)**nt - 1) / rn;
 
-    p.innerHTML = "Remaining loan balance: $" + rem.toFixed(2);
+    p.innerHTML = "<p>Remaining loan balance: $" + rem.toFixed(2) + "</p>";
     document.getElementById('modal').showModal()
 }
 function reset() {
