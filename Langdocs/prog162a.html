@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prog162a</title>
+</head>
+<body>
+    <label for="factorial">Enter a number</label>
+    <input type="number" id="factorial" name="factorial">
+    <button onclick="Math()">Math</button>
+    <p id="out"></p>
+    <script>
+        function Math() {
+            let fact = Number(document.getElementById("factorial").value);
+            for (let i = fact; i > 1; i--) {
+                let total = i * (i - 1);
+            }
+            document.getElementById("out").innerHTML = total;
+        }
+    </script>
+</body>
+</html>

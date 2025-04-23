@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog122c</title>
+</head>
+<body>
+    <p id="out"></p>
+    <script>
+        let msg = ""
+        for (let i=2; i<=10; i+=2) {
+            msg += i + "&emsp;" + (i + 1) + "&emsp;" + i*2 + "&emsp;" + i**2 + "<br>";
+        }
+        document.getElementById("out").innerHTML = msg
+    </script>
+</body>
+</html>
