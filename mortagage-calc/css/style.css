@@ -10,21 +10,26 @@ body {
     border-radius: 10px;
     margin-top: 30vh;
     padding: 15px;
-    margin-left: 20vw; margin-right: 20vw;
+    margin-left: 10vw; margin-right: 10vw;
     vertical-align: middle;
 }
-label {
+#label {
     display: flex;
-    align-content: flex-start;
-    justify-content: flex-start;
-    margin: 3px 3px 3px 3px;
+    text-align: left;
     color: white;
+    flex-flow: column;
+}
+label {
+    margin-top: 6px;
 }
 input {
     display: flex;
     align-self: right;
     justify-self: right;
     border: 2px solid black;
+    margin: 3px 3px 3px 3px;
+    flex-direction: row;
+    transform: translate(0px,-95px);
 }
 input:hover{
     background: darkgray;
@@ -42,7 +47,6 @@ button{
     justify-self: center;
     text-align: center;
     justify-content: center;
-    margin-top: 10px;
 }
 button:hover{
     background: lightgray;
@@ -62,14 +66,15 @@ dialog{
     border-radius: 3px;
     padding: 20px;
 }
-@media (max-width: 480px) {
-    #inputs {margin-left: 10vw; margin-right: 10vw}
+@media (max-width: 520px) {
+    #inputs {margin-left: 10vw; margin-right: 10vw;}
+    input {width: 25vw;}
     button {width: 20vw}
     h1 {font-size: 25px;}
 }
-@media (max-width: 300px) {
+@media (max-width: 460px) {
     #inputs {margin-left: 5vw; margin-right: 5vw}
-    input {width: 50vw;}
+    input {width: 25vw;}
     button {width: 30vw}
     h1 {font-size: 15px;}
 }
