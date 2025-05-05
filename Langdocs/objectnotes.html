@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object notes</title>
+</head>
+<body>
+    <script>
+        //object notation
+        let hotel = {
+            name : "hotel 1",
+            rooms : 40,
+            booked : 20,
+            roomTypes: ['single', 'double', 'suite'],
+            checkAvailable: function() {
+                return this.rooms - this.booked;
+            }
+        };
+
+        document.write(hotel['name'] + '<br>');
+        document.write(hotel.name + '<br>');
+        document.write('Available rooms:' + hotel.checkAvailable() + '<br>');
+
+        //constructor notation
+        function HotelConstructor(name, rooms, booked) {
+            this.name = name;
+            this.rooms = rooms;
+            this.booked = booked;
+            this.checkAvailable = function() {
+                return this.rooms - this.booked;
+            };
+        }
+
+        let GreatInn = new HotelConstructor("Great Inn", Infinity, Infinity);
+        document.write(GreatInn.name + '<br>');
+        document.write('Available rooms:' + GreatInn.checkAvailable() + '<br>');
+
+        //class notation
+        class Hotel {
+            //constructor set up var for our objects
+            constructor(name,rooms,booked) {
+                this.name = name;
+                this.rooms = rooms;
+                this.booked = booked;
+            }
+
+            checkAvailable() {
+                return this.rooms - this.booked;
+            }
+        }
+        // a class is just a collection of variables and/or functions
+        let Jumblesh = new Hotel("Jumble's hotel", 100, 20);
+
+        document.write(Jumblesh.name + '<br>');
+        document.write('Available rooms:' + Jumblesh.checkAvailable() + '<br>');
+    </script>
+</body>
+</html>
