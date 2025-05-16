@@ -1,0 +1,50 @@
+body{
+    background: rgb(85, 85, 85);
+    place-items: center;
+    margin:0;
+    min-height: 100vh;
+}
+body::before,
+body::after{
+    z-index: -9999;
+    content: "";
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 22vw;
+    pointer-events: none;
+}
+
+body::before {
+    left: 87px;
+    background: linear-gradient(90deg,rgb(34,34,34) 5%,transparent 100%);
+}
+body::after {
+    right: 0;
+    background: linear-gradient(270deg,rgb(34,34,34) 5%,transparent 100%);
+}
+
+nav{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px transparent;
+    text-align: center;
+}
+nav label{
+    margin-left: -5px;
+}
+nav a:hover{
+    transform: rotate(10deg);
+    transition: transform .25s ease-in-out;
+}
+nav a{
+    transition: transform .25s ease-in-out;
+    margin: 5px 0px 5px 0px;
+}
+h1,h2,p{
+    margin-left: 70%;
+}
+*{
+    color: white;
+}
