@@ -3,54 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        body{
-            font-family: Arial;
-        }
-        h1,h2,h3{
-            font-family: Helvetica;
-        }
-        #maindiv {
-            background-color: gainsboro;
-        }
-        a{
-            font-weight: bold;
-            color: rgb(40, 150, 50);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="./interactive.js" defer></script>
+    <title>Home Page | Brick</title>
 </head>
 <body>
-    <div id="maindiv">
-        <h1>This is my first webpage!</h1>
-        <p>Hello, world!</p>
-        <a href="#filebrowser">To Class Files</a>
-
-        <h2>Subheading!</h2>
-        <p>More text!</p>
-    </div>
-
-    <div>
-        <h2 id="filebrowser">Class Files</h2>
-
-        <ul>
-            <li><a href="practices.html">HTML practices</a></li>
-            <li><a href="text.html">Text</a></li>
-            <li><a href="Egg_recipe.html">Egg Recipe</a></li>
-            <li><a href="#">About page</a></li>
-            <li>
-                <a href="cityfarmer/" target="_blank">Cityfarmer</a>
-                <ul>
-                    <li><a href="cityfarmer/index.html">Index</a></li>
-                    <li><a href="cityfarmer/cityfarmer.html">Main page</a></li>
-                </ul>
-            </li>
-        </ul>
-
-        <blockquote>"This is my quote" - Me</blockquote>
-        <a href="https://brickwitmer.github.io/">Github home page</a>
-        <a href="mailto:me@me.com">Email</a>
-        <a href="tel:+10001112222">Call me (000) 111 2222</a>
-    </div>
+    <nav>
+        <a href="index.html"><img src="./Images/Vector 1.png"></a>
+        <label for="home">Home</label>
+        <a href="aboutme.html"><img src="./Images/Vector 3.png"></a>
+        <label for="aboutme">About Me</label>
+        <a href="portfolio.html"><img src="./Images/Vector 2.png"></a>
+        <label for="port">Portfolio</label>
+        <input type="number" id="color1" placeholder="rgb(??,??,??)">
+        <input type="number" id="color2" placeholder="rgb(??,??,??)">
+    </nav>
+    <main>
+        <h1 id="heading" onmousemove="coord()">
+            Home
+        </h1>
+        <p>
+            Welcome to my page. I'm Brick Witmer.
+        </p>
+    </main>
 </body>
 </html>
