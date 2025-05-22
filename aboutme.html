@@ -15,18 +15,26 @@
         <label for="aboutme">About Me</label>
         <a href="portfolio.html"><img src="./Images/Vector 2.png"></a>
         <label for="port">Portfolio</label>
+        <div id="change_theme">
+            <input type="color" id="color1" value="#222222">
+            <label for="color1">Gradient</label>
+            <input type="color" id="color2" value="#555555">
+            <label for="color2">back </br> ground</label>
+            <button id="change" onclick="changetheme()">Apply</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
     </nav>
     <main>
-        <h1 id="heading">
+        <h1 class="heading">
             About Me
         </h1>
-        <p>
-            Hello, I'm Brick Witmer and I am interested in computer science. 
-            I like researching and learning new information about computers, space, math, and history.
-            I know Python, C++, HTML, JS, and CSS.
-            I love the idea of working for something that can impact the future of this planet for the better, and I mainly want it in a subject of either computer science or space related.
-
-        </p>
+        <div class="card">
+            <p>I am interested in space, computer science, math, science, and history</p>
+        </div>
+        <div class="card">
+            <p>I know Python, HTML, CSS, JS, some java, some C++, and godot code</p>
+        </div>
+        
     </main>
 </body>
 </html>
