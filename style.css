@@ -36,12 +36,14 @@ nav{
     padding: 10px;
     border: 2px solid transparent;
     text-align: center;
+    position: absolute;
 }
 nav label{
     margin-left: -5px;
+    
 }
 nav a:hover{
-    transform: rotate(10deg);
+    transform: rotate(4deg);
     transition: transform .25s ease-in-out;
 }
 nav a{
@@ -97,6 +99,16 @@ h1,h2,p,span,label{
     display: flex;
     flex-direction: row;
 }
+.images{
+    display: flex;
+    margin-top: 50px;
+    justify-self: center;
+    margin-left: 13%;
+}
+.show:hover{
+    transform: rotate(3deg);
+    transition: transform 0.5s;
+}
 @media (max-width: 862px){
     .card-row p{
         display: flex;
@@ -111,5 +123,34 @@ h1,h2,p,span,label{
     .card-row{
         display: flex;
     }
+    .show{
+    background: var(--color1);
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    height: 40px;
+    width: 40px;
 }
+}
+@media (max-width: 600px){
+    .images{
+    display: flex;
+    margin-top: 50px;
+    justify-self: center;
+    margin-left: 20%;
+}
+}
+.show{
+    background: var(--color1);
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    transition: transform 0.5s;
+}
+#bring{
+    display: center;
+}
+
 
