@@ -22,3 +22,10 @@ window.onload = () => {
     r.style.setProperty('--color1',c1);
     r.style.setProperty('--color2',c2);
 }
+
+function showMod(modal){
+    document.getElementById(modal).showModal()
+}
+function closeMod(modal){
+    document.getElementById(modal).close()
+}
