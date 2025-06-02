@@ -106,7 +106,10 @@ h1,h2,p,span,label{
     transform: rotate(3deg);
     transition: transform 0.5s;
 }
-@media (max-width: 862px){
+#port{
+    width: 300rem;
+}
+@media (max-width: 1091px){
     .card-row p{
         display: flex;
         font-size: 2vw;
@@ -138,7 +141,7 @@ h1,h2,p,span,label{
 .port{
     width: 10rem;
 }
-@media (max-width: 500px){
+@media (max-width: 682px){
     .images{
     display: flex;
     margin-top: 50px;
@@ -147,6 +150,38 @@ h1,h2,p,span,label{
 }
 .port{
     width: 6rem;
+}
+#home_main{
+    display: block;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+.modal img{
+    width: 20rem;
+    height: 15rem;
+}
+@media (max-width: 400) {
+    .modal img{
+    width: 20rem;
+    height: 15rem;
+}
+    .card-row p{
+        display: flex;
+        font-size: 2vw;
+        max-width: 35vw;
+        padding: 1vw;
+        margin-left: 5rem;
+        text-align: center;
+        justify-self: center;
+    }
+    #port{
+        width: 150rem;
+    }
+    #home_main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
 }
 }
 }
@@ -166,5 +201,19 @@ h1,h2,p,span,label{
 dialog{
     background: gray;
 }
-
+.modal p{
+    filter: invert(0);
+    color: #222222;
+}
+#home_main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+}
+#home_main h2{
+    font-size: 2rem;
+}
+#home_main p{
+    font-size: 1.5rem;
+}
 

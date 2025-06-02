@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./interactive.js" defer></script>
     <title>Portfolio | Brick</title>
 </head>
@@ -29,35 +30,40 @@
             Portfolio
         </h1>
 
-        <input type="image" onclick="showMod('modal')" src="/Images/Screenshot (7).png" width="300rem" class="port">
-        <input type="image" onclick="showMod('modal2')" src="/Images/Screenshot (8).png" width="300rem" class="port">
-        <input type="image" onclick="showMod('modal3')" src="/Images/Screenshot (9).png" width="300rem" class="port"><br/>
-        <input type="image" onclick="showMod('modal4')" src="/Images/Screenshot (10).png" width="300rem" class="port">
-        <input type="image" onclick="showMod('modal5')" src="/Images/Screenshot 2025-05-29 142736.png" width="300rem" class="port">
-        <input type="image" onclick="showMod('modal6')" src="/Images/Screenshot 2025-05-29 143256.png" width="300rem" class="port">
-        
-        <dialog id="modal">
+            <input type="image" onclick="showMod('modal')" src="/Images/Screenshot (7).png" width="300rem" class="port">
+            <input type="image" onclick="showMod('modal2')" src="/Images/Screenshot (8).png" width="300rem" class="port">
+            <input type="image" onclick="showMod('modal3')" src="/Images/Screenshot (9).png" width="300rem" class="port"><br/>
+            <input type="image" onclick="showMod('modal4')" src="/Images/Screenshot (10).png"  width="300rem" class="port">
+            <input type="image" onclick="showMod('modal5')" src="/Images/Screenshot 2025-05-29 142736.png" width="300rem" class="port">
+            <input type="image" onclick="showMod('modal6')" src="/Images/Screenshot 2025-05-29 143256.png" width="300rem" class="port">
+        <dialog id="modal" class="modal">
             <img src="/Images/Screenshot (7).png" height="500rem">
+            <p>A pie recipe website that I made.</p>
             <button onclick="closeMod('modal')">Close</button>
         </dialog>
-        <dialog id="modal2">
+        <dialog id="modal2" class="modal">
             <img src="/Images/Screenshot (8).png" height="500rem">
+            <p>A website that has cool visuals that move.</P>
             <button onclick="closeMod('modal2')">Close</button>
         </dialog>
-        <dialog id="modal3">
+        <dialog id="modal3" class="modal">
             <img src="/Images/Screenshot (9).png" height="500rem">
+            <p>A contact me form.</p>
             <button onclick="closeMod('modal3')">Close</button>
         </dialog>
-        <dialog id="modal4">
+        <dialog id="modal4" class="modal">
             <img src="/Images/Screenshot (10).png" height="500rem">
+            <p>A website that shows multi-media that I found interesting.</p>
             <button onclick="closeMod('modal4')">Close</button>
         </dialog>
         <dialog id="modal5">
             <img src="/Images/Screenshot 2025-05-29 142736.png" height="500rem">
+            <p>A unfinished game where the player would make a factory called Drill Pace.</p>
             <button onclick="closeMod('modal5')">Close</button>
         </dialog>
-        <dialog id="modal6">
+        <dialog id="modal6" class="modal">
             <img src="/Images/Screenshot 2025-05-29 143256.png" height="500rem">
+            <p>A mortgage website that takes in a few inputs and tells you your mortgage.</p>
             <button onclick="closeMod('modal6')">Close</button>
         </dialog>
     </main>
