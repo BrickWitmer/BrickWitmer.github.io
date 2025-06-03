@@ -148,6 +148,9 @@ h1,h2,p,span,label{
     justify-self: center;
     margin-left: 20%;
 }
+#logo{
+    float: right;
+}
 .port{
     width: 6rem;
 }
@@ -182,6 +185,9 @@ h1,h2,p,span,label{
     flex-direction: column;
     margin-top: 0;
 }
+#logo{
+    float: right;
+}
 }
 }
 }
@@ -208,12 +214,19 @@ dialog{
 #home_main{
     display: flex;
     flex-direction: column;
-    margin-top: 15rem;
+    margin-top: 5rem;
 }
 #home_main h2{
     font-size: 2rem;
 }
 #home_main p{
     font-size: 1.5rem;
+}
+#logo{
+    display: flex;
+    float: none;
+    justify-self: center;
+    padding-left: 5rem;
+    padding-top: 2rem;
 }
 
