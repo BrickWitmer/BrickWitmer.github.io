@@ -176,6 +176,7 @@ h1,h2,p,span,label{
         margin-left: 5rem;
         text-align: center;
         justify-self: center;
+        margin: 0 auto;
     }
     #port{
         width: 150rem;
