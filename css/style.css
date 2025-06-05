@@ -56,7 +56,6 @@ p{
 }
 *{
     color: var(--color2);
-    margin: 0 auto;
 }
 button, input{
     color: black;
